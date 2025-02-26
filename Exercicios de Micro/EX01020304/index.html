@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Semântica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Garagem do João</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre Nós</h2>
+            <p>Bem-vindo ao Garagem do João! Somos mais do que um simples restaurante – somos um espaço onde sabor, tradição e boas histórias se encontram.</p>
+        </section>
+
+        <section>
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Cardapio Online</li>
+                <li>Delivery</li>
+                <li>Reservas</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Adicionar Pedido</h2>
+            <input type="text" id="itemInput" placeholder="Digite um item">
+            <button onclick="adicionarItem()">Adicionar Item</button>
+            <ul id="lista"></ul>
+        </section>
+
+        <section>
+            <h2>Consumo de API</h2>
+            <button onclick="buscarDados()">Buscar Dados</button>
+            <div id="resultado"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

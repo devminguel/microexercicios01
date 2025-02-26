@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Simulado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CRUD Simulado</h1>
+    </header>
+
+    <main>
+        <!-- Formulário para adicionar/editar usuários -->
+        <form id="formUsuario">
+            <input type="hidden" id="usuarioId" value="">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" required>
+
+            <button type="submit" id="salvarBtn">Salvar</button>
+            <button type="button" id="cancelarEdicaoBtn" style="display: none;">Cancelar</button>
+        </form>
+
+        <!-- Tabela para exibir a lista de usuários -->
+        <table id="tabelaUsuarios" border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Idade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As linhas serão adicionadas dinamicamente aqui -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Inclua o JavaScript no final do body -->
+    <script src="script.js"></script>
+</body>
+</html>
